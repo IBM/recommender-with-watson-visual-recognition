@@ -1,0 +1,6 @@
+{
+"IBM-INTERNAL" : "PII admin facing",
+"simpleMessage": "Tämä on yksinkertainen sanoma.",
+"messageWithTemplate": "Hei, {0}.",
+"messageWithReorderedTemplate": "Taulukkoindeksin jotta asiat: {1} {2} {0}"
+}

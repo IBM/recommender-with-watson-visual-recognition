@@ -1,0 +1,8 @@
+{
+  "node": true,
+  "quotmark": "single",
+  "smarttabs": true,
+  "noempty": true,
+  "undef": true,
+  "unused": true
+}

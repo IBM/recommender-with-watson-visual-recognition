@@ -1,0 +1,6 @@
+{
+"IBM-INTERNAL" : "PII admin facing",
+"simpleMessage": "This is a simple message.",
+"messageWithTemplate": "Hello, {0}",
+"messageWithReorderedTemplate": "The array index order matters: {1} {2} {0}"
+}

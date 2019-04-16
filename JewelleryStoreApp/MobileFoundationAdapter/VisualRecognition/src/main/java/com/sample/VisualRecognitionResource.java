@@ -34,7 +34,7 @@ import com.ibm.mfp.adapter.api.ConfigurationAPI;
 import com.ibm.mfp.adapter.api.OAuthSecurity;
 import com.ibm.mfp.adapter.api.AdaptersAPI;
 
-
+@OAuthSecurity(enabled=false)
 @Api(value = "Sample Adapter Resource")
 @Path("/resource")
 public class VisualRecognitionResource {

@@ -21,6 +21,7 @@ export class CheckoutPage implements OnInit {
 
   removeLast(){
     this.cartService.clearCart();
+    this.total = 0;
     this.loadCart();
   }
 

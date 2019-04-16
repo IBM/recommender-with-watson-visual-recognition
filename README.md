@@ -490,17 +490,22 @@ $ mfpdev adapter deploy MyServer
 ```
 ##### 4.4.2 Launch MFP dashboard and update adapter configurations
 Launch MFP Dashboard as below:
-  * In the [IBM Cloud dashboard](https://cloud.ibm.com/dashboard/), under `Cloud Foundry Services`, click on the `Mobile Foundation` service you created in [Step 4.2]. The service overview page that gets shown, will have the MFP dashboard embedded within it. You can also open the MFP dashboard in a separate browser tab by appending `/mfpconsole` to the *url* mentioned in [Step 4].
+  * In the [IBM Cloud dashboard](https://cloud.ibm.com/dashboard/), under `Cloud Foundry Services`, click on the `Mobile Foundation` service you created in [Step 4.2]. The service overview page that gets shown, will have the MFP dashboard embedded within it. You can also open the MFP dashboard in a separate browser tab by appending `/mfpconsole` to the *url* `https://mobilefoundation-xxxx-xxxxx.xx-xx.mybluemix.net`.
+>Example: `https://mobilefoundation-xxxx-xxxxx.xx-xx.mybluemix.net/mfpconsole`
+
+> NOTE: `username` & `password` can be found in `Service credentials` in step 4.2.
   * Inside the MFP dashboard, in the list on the left, you will see the `VisualRecognition` adapter listed.
 
 Update MFP Adapter configuration as below:
-  * Inside the MFP dashboard, click on the `VisualRecognition` adapter. Under `Configurations` tab, you should see the various properties for accessing Cloud Object Storage, recommendation Engine Api, Visual Recognition and virtual Mirror Api as shown below.
+  * Inside the MFP dashboard, click on the `VisualRecognition` adapter. Under `Configurations` tab, you should see the various properties for accessing Cloud Object Storage, recommendation Engine Api and Visual Recognition Api as shown below.
 
      <img src="doc/source/images/MobileFoundationAdapterDashboard.png" alt="Option to specify the configuration properties for accessing Cloud Object Storage and APIs in deployed MFP Adapter" width="800" border="10" />
 
-  * The `Cloud Object Storage Bucket Name` can be found in step 2.1.1, `Cloud Object Storage API Key` can be found in step 2.1.2, `Cloud Object Storage Endpoint` can be found by going to [Cloud Object Storage Dashboard](https://cloud.ibm.com/objectstorage/) clicking on `Endpoint` and the public link for Resiliency and Location as selected in step 2.1.1 and `Cloud Object Storage Service ID` can be found in step 2.1.2.
+  * The `Cloud Object Storage Bucket Name` can be found in step 2.1.1, `Cloud Object Storage API Key` can be found in step 2.1.2, `Cloud Object Storage Endpoint` can be found by going to <b>`IBM Cloud Dashboard > Resources > Storage > Cloud Object Storage`</b> and clicking on `Endpoint` and the public link for Resiliency and Location as selected in step 2.1.1 and `Cloud Object Storage Service ID` can be found in step 2.1.2.
 
-  * The `Recommendation Engine API URL` can be found in step 2.7, `Virtual Mirror API URL` can be found in step 3, `Visual Recognition API URL` can be found in step 4.2.
+  * The `Recommendation Engine API URL` is your python app url and can be found in step 2.7, `Visual Recognition API URL` is your NodeJs app url and can be found in step 4.2.
+
+  * Save the changes by clicking `Save`.
 
   * Click on `Resources` tab. You should see the various REST APIs exposed by `VisualRecognition` adapter as shown below.
 

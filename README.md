@@ -2,7 +2,7 @@
 
 A good recommendation system will always boost your sales. When it comes to apparels or Jewellery, the use of better recommendations using image contents are always a matter of prime importance. People show greater interest in the products, when they get a personalized recommendation.
 
-In this code pattern, we develop a hybrid mobile application using Mobile First Foundation integrated with recommendation system based on Watson Visual Recognition ,which takes in an image of the user as an input and based on his/her features(like age, gender, etc), it returns a personalised recommendation of jewellery products.This can be extended to any other product.
+In this code pattern, we develop a hybrid mobile application using Mobile First Foundation integrated with recommendation system based on Watson Visual Recognition ,which takes in an image of the user as an input and based on his/her features(like age, gender, etc), it returns a personalized recommendation of jewellery products.This can be extended to any other product.
 
 When the reader has completed this Code Pattern, they will understand how to:
 

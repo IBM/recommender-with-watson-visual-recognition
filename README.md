@@ -32,9 +32,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 11. Recommendation engine returns the images and details of the recommended products to the user's mobile application.
 12. User can now add items to the cart and view them.
 
-<!--Optionally, update this section when the video is created-->
-# Watch the Video
-
 ## Pre-requisites
 
 * [IBM Cloud account](https://www.ibm.com/cloud/) : Create an IBM Cloud account.

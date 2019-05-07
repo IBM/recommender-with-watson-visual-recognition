@@ -23,7 +23,7 @@ getObjectStorageAccess() {
       // already loaded data
       return resolve(this.objectStorageAccess);
     }
-    const dataRequest = new WLResourceRequest("/adapters/VisualRecognition/resource/objectStorage", WLResourceRequest.GET);
+    const dataRequest = new WLResourceRequest("/adapters/ImagesFetch/resource/objectStorage", WLResourceRequest.GET);
     dataRequest.send().then(
       (response) => {
         console.log('--> Mobile Foundation: got Object Storage AuthToken from adapter ', response);
@@ -47,7 +47,7 @@ getRecommendationEngineAccess(){
       // already loaded data
       return resolve(this.recommendationEngineAccess);
     }
-    const dataRequest = new WLResourceRequest("/adapters/VisualRecognition/resource/recommendationEngine", WLResourceRequest.GET);
+    const dataRequest = new WLResourceRequest("/adapters/ImagesFetch/resource/recommendationEngine", WLResourceRequest.GET);
     dataRequest.send().then(
       (response) => {
         console.log('--> Mobile Foundation: got Recommendation Engine API from adapter ', response);
@@ -71,7 +71,7 @@ getVisualRecognitionAccess(){
       // already loaded data
       return resolve(this.VisualRecognitionAccess);
     }
-    const dataRequest = new WLResourceRequest("/adapters/VisualRecognition/resource/visualRecognition", WLResourceRequest.GET);
+    const dataRequest = new WLResourceRequest("/adapters/ImagesFetch/resource/visualRecognition", WLResourceRequest.GET);
     dataRequest.send().then(
       (response) => {
         console.log('--> Mobile Foundation: got Visual Recognition API from adapter ', response);

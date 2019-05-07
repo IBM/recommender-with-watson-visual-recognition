@@ -7,7 +7,6 @@
 
 package com.sample;
 
-
 import javax.ws.rs.core.Context;
 import java.util.logging.Logger;
 import com.amazonaws.SDKGlobalConfiguration;
@@ -19,11 +18,12 @@ import com.ibm.mfp.adapter.api.ConfigurationAPI;
 import com.ibm.mfp.adapter.api.OAuthSecurity;
 
 @OAuthSecurity(enabled=false)
-public class VisualRecognitionApplication extends MFPJAXRSApplication{
+public class ImagesFetchApplication extends MFPJAXRSApplication{
+
 	@Context
 	ConfigurationAPI configurationAPI;
 
-	static Logger logger = Logger.getLogger(VisualRecognitionApplication.class.getName());
+	static Logger logger = Logger.getLogger(ImagesFetchApplication.class.getName());
 	
 	private IBMOAuthCredentials oAuthCreds = null;
 	private String baseUrl = "";
@@ -40,7 +40,6 @@ public class VisualRecognitionApplication extends MFPJAXRSApplication{
 		String apiKey = configurationAPI.getPropertyValue("apiKey");
 		String recommendationEngine = configurationAPI.getPropertyValue("recommendationEngine");
 		String visualRecognition = configurationAPI.getPropertyValue("visualRecognition");
-
 		this.recommendationEngineURL= recommendationEngine;
 		this.visualRecognitionURL= visualRecognition;
 		

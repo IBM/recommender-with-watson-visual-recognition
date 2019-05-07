@@ -454,9 +454,9 @@ Recommendation Engine API & Virtual Mirror API in MFP Adapter
 ```
 $ cd MobileFoundationAdapter
 
-$ cd VisualRecognition
+$ cd ImagesFetch
 ```
-* Add the `URL` along with the port number `:443` appended with `/mfpadmin`, `User` and `Password` in the `pom.xml` file which is present in `VisualRecognition` directory as show bellow.
+* Add the `URL` along with the port number `:443` appended with `/mfpadmin`, `User` and `Password` in the `pom.xml` file which is present in `ImagesFetch` directory as show bellow.
 
 <pre><code>
 ...
@@ -467,7 +467,7 @@ $ cd VisualRecognition
 ...
 </code></pre>
 
-* Build the `VisualRecognition` adapter as shown below.
+* Build the `ImagesFetch` adapter as shown below.
 ```
 $ mfpdev adapter build
 Building adapter...
@@ -494,7 +494,7 @@ Launch MFP Dashboard as below:
   * Inside the MFP dashboard, in the list on the left, you will see the `VisualRecognition` adapter listed.
 
 Update MFP Adapter configuration as below:
-  * Inside the MFP dashboard, click on the `VisualRecognition` adapter. Under `Configurations` tab, you should see the various properties for accessing Cloud Object Storage, recommendation Engine Api and Visual Recognition Api as shown below.
+  * Inside the MFP dashboard, click on the `ImagesFetch` adapter. Under `Configurations` tab, you should see the various properties for accessing Cloud Object Storage, recommendation Engine Api and Visual Recognition Api as shown below.
 
      <img src="doc/source/images/MobileFoundationAdapterDashboard.png" alt="Option to specify the configuration properties for accessing Cloud Object Storage and APIs in deployed MFP Adapter" width="800" border="10" />
 
@@ -512,7 +512,7 @@ Update MFP Adapter configuration as below:
 To Test the adapter use any REST Clients like [Postman](https://www.getpostman.com/downloads/).
 After Installing postman type the `url` created in [step 4.2] and append it with `/mfp/api/adapters/ImagesFetch/resource` and `/objectStorage` to test whether the adapter is establishing connection with Cloud Object Storage.
 
->Example: `https://mobilefoundation-xxxx-xxxxxx.xx-xx.mybluemix.net/mfp/api/adapters/VisualRecognition/resource/objectStorage`
+>Example: `https://mobilefoundation-xxxx-xxxxxx.xx-xx.mybluemix.net/mfp/api/adapters/ImagesFetch/resource/objectStorage`
 
  * Now click on `Send` button to run the `GET /` API. The API response should get shown in the `Response Body` as shown in snapshot below.
 
@@ -522,13 +522,13 @@ After Installing postman type the `url` created in [step 4.2] and append it with
 
  * The GET API on `/recommendationEngine` should return a JSON object containing `recommendationEngineApi` as shown below.
 
->Example: `https://mobilefoundation-xxxx-xxxxxx.xx-xx.mybluemix.net/mfp/api/adapters/VisualRecognition/resource/recommendationEngine`
+>Example: `https://mobilefoundation-xxxx-xxxxxx.xx-xx.mybluemix.net/mfp/api/adapters/ImagesFetch/resource/recommendationEngine`
 
    <img src="doc/source/images/TestMFPAdapter_recommendationEngineApi.png" alt="Test the newly added API in MFP Adapter for getting Recommendation Engine API" width="800" border="10" />
 
  * The GET API on `/visualRecognition` should return a JSON object containing `VisualRecognitionApi` as shown below.
 
- >Example: `https://mobilefoundation-xxxx-xxxxxx.xx-xx.mybluemix.net/mfp/api/adapters/VisualRecognition/resource/visualRecognition`
+ >Example: `https://mobilefoundation-xxxx-xxxxxx.xx-xx.mybluemix.net/mfp/api/adapters/ImagesFetch/resource/visualRecognition`
 
    <img src="doc/source/images/TestMFPAdapter_visualRecognition.png" alt="Test the newly added API in MFP Adapter for getting Visual Recognition API" width="800" border="10" />
 

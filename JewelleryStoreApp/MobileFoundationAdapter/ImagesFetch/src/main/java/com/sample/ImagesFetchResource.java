@@ -37,14 +37,14 @@ import com.ibm.mfp.adapter.api.AdaptersAPI;
 @OAuthSecurity(enabled=false)
 @Api(value = "Sample Adapter Resource")
 @Path("/resource")
-public class VisualRecognitionResource {
+public class ImagesFetchResource {
 	/*
 	 * For more info on JAX-RS see
 	 * https://jax-rs-spec.java.net/nonav/2.0-rev-a/apidocs/index.html
 	 */
 
 	// Define logger (Standard java.util.Logger)
-	static Logger logger = Logger.getLogger(VisualRecognitionResource.class.getName());
+	static Logger logger = Logger.getLogger(ImagesFetchResource.class.getName());
 
 	// Inject the MFP configuration API:
 	@Context
@@ -57,7 +57,7 @@ public class VisualRecognitionResource {
 	@Path("/objectStorage")
 	@Produces("application/json")
 	public Response getObjectStorageAccess() throws Exception {
-		VisualRecognitionApplication app = adaptersAPI.getJaxRsApplication(VisualRecognitionApplication.class);
+		ImagesFetchApplication app = adaptersAPI.getJaxRsApplication(ImagesFetchApplication.class);
 		return Response.ok(app.getObjectStorageAccess()).build();
 	}
 
@@ -65,7 +65,7 @@ public class VisualRecognitionResource {
 	@Path("/recommendationEngine")
 	@Produces("application/json")
 	public Response getRecommendationEngineAccess() throws Exception {
-		VisualRecognitionApplication app = adaptersAPI.getJaxRsApplication(VisualRecognitionApplication.class);
+		ImagesFetchApplication app = adaptersAPI.getJaxRsApplication(ImagesFetchApplication.class);
 		return Response.ok(app.getRecommendationEngineAccess()).build();
 	}
 
@@ -73,7 +73,7 @@ public class VisualRecognitionResource {
 	@Path("/visualRecognition")
 	@Produces("application/json")
 	public Response getVisualRecognitionAccess() throws Exception {
-		VisualRecognitionApplication app = adaptersAPI.getJaxRsApplication(VisualRecognitionApplication.class);
+		ImagesFetchApplication app = adaptersAPI.getJaxRsApplication(ImagesFetchApplication.class);
 		return Response.ok(app.getVisualRecognitionAccess()).build();
 	}
 }

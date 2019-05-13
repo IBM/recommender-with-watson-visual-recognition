@@ -508,7 +508,7 @@ Update MFP Adapter configuration as below:
 
      <img src="doc/source/images/MobileFoundationAdapterApis.png" alt="The REST APIs of VisualRecognition adapter" width="800" border="10" />
 
-##### 4.4.3 Test the VisualRecognition adapter
+##### 4.4.3 Test the ImagesFetch adapter
 To Test the adapter use any REST Clients like [Postman](https://www.getpostman.com/downloads/).
 After Installing postman type the `url` created in [step 4.2] and append it with `/mfp/api/adapters/ImagesFetch/resource` and `/objectStorage` to test whether the adapter is establishing connection with Cloud Object Storage.
 

@@ -32,7 +32,7 @@ When the reader has completed this, they will understand how to:
 
 * [IBM Cloud account](https://www.ibm.com/cloud/) : Create an IBM Cloud account.
 * [Python 3](https://www.python.org/downloads/): Install python 3.
-* [Java 1.8.x](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html): Make sure you have required version (Java 1.8.x).
+* [Java 1.8.x](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=openj9): Make sure you have required version (Java 1.8.x).
 
 # Steps
 

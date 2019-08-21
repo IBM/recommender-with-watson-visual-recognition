@@ -1,10 +1,6 @@
 # Recommendation system based on visual recognition.
 
-A good recommendation system will always boost your sales. When it comes to apparels or Jewellery, the use of better recommendations using image contents are always a matter of prime importance. People show greater interest in the products, when they get a personalized recommendation.
-
-In this code pattern, we develop a hybrid mobile application using Mobile First Foundation integrated with a recommendation system ,which takes in an image of the user as input and detects his/her features(like age, gender, etc) with the help of Watson Visual Recognition model. Based on these features, the recommendation engine returns a personalized recommendation of jewellery products. This can be extended to any other product.
-
-When the reader has completed this Code Pattern, they will understand how to:
+When the reader has completed this, they will understand how to:
 
 * Connect to Mobile First Foundation using a mobile application.
 * Take inputs from mobile application and do required processing on IBM Cloud.
